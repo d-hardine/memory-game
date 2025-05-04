@@ -14,14 +14,14 @@ async function fetchData(pokemon) {
         if(!response.ok) {
             throw new Error('nguwawor')
         }
-        else {
-            const data = await response.json()
-            console.log(data.stats[1])
-        }
+        
+        const data = await response.json()
+        console.log(data)
+        
     }
     catch(error) {
         console.error(error)
     }
 }
 
-fetchData('bob')
+fetchData('pikachu')
