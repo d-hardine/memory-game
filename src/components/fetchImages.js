@@ -1,6 +1,6 @@
 async function getPokemonData() {
     try {
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=2000`)
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=2000`) //fetch every single available pokemon
 
         if(!response.ok)
             throw Error('invalid response bro')
@@ -28,13 +28,11 @@ async function getPokemonData() {
                 image: pokemonData[i].sprites.front_default
             }
         }
-        console.log(pokemonImage)
         return pokemonImage
     }
     catch(error) {console.error(error)}
 }
 
-getPokemonData()
 
 function getRandomNumberArray(length, min, max) { //randomizer
     let newArray = [];
@@ -49,3 +47,5 @@ function getRandomNumberArray(length, min, max) { //randomizer
 
     return newArray;
 }
+
+export { getPokemonData }

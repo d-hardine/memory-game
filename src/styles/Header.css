@@ -1,0 +1,11 @@
+header {
+    background-color: yellow;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
