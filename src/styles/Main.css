@@ -1,18 +1,16 @@
 main {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: auto;
     padding: 20px;
 }
 
-.cards-container {
+.cat-image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    gap: 20px;
-    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 6px;
+    justify-content: center;
 }
 
-.block {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-}   
+img {
+    margin: auto;
+}
