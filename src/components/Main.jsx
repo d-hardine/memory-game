@@ -5,6 +5,7 @@ import '../styles/Main.css'
 export default function Main() {
     const [catImages, setCatImages] = useState([])
     const [score, setScore] = useState(0)
+    const [popupScore, setPopupScore] = useState(0)
     const [bestScore, setBestScore] = useState(0)
     const [gameOverPopup, setGameOverPopup] = useState(false)
 
@@ -35,6 +36,7 @@ export default function Main() {
         } else { //keep playing...
             e.target.classList.add('isClicked')
             setScore(score + 1)
+            setPopupScore(score + 1)
             if( score >= bestScore)
                 setBestScore(score + 1)
         }
@@ -61,7 +63,7 @@ export default function Main() {
                 (<div className="overlay">
                     <div className="popup">
                         <p><b>GAME OVER</b></p>
-                        <p>Score: {score}</p>
+                        <p>Score: {popupScore}</p>
                         <p>Best Score: {bestScore}</p>
                         <button onClick={() => setGameOverPopup(false)}>Play Again</button>
                     </div>
