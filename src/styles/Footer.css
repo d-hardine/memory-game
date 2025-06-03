@@ -1,0 +1,22 @@
+footer {
+    background-color: #A6D6D6;
+    color: darkslategray;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+    font-size: large;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-btn {
+    border: none;
+    background-color: #8E7DBE;
+    padding: 15px;
+    border-radius: 30px;
+}

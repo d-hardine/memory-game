@@ -1,16 +1,18 @@
 main {
     max-width: 1500px;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 .cat-image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
-    gap: 6px;
+    gap: 20px;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-img {
+.cat-image {
     margin: auto;
 }
